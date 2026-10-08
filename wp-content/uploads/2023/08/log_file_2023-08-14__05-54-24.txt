@@ -1,0 +1,26 @@
+
+---Downloaded files---
+The import files for: Home 01 - Light were successfully downloaded!
+Initial max execution time = 240
+Files info:
+Site URL = https://finaxiopro.themeori.com
+Data file = /home/u824833032/domains/themeori.com/public_html/finaxiopro/wp-content/themes/finaxio//inc/demo-content/demo/content.xml
+Widget file = /home/u824833032/domains/themeori.com/public_html/finaxiopro/wp-content/themes/finaxio//inc/demo-content/demo/widget.wie
+Customizer file = /home/u824833032/domains/themeori.com/public_html/finaxiopro/wp-content/themes/finaxio//inc/demo-content/demo/customizer.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Right Sidebar : 
+
+Block - No Title - Widget already exists
+Recent Post - finaxio - No Title - Imported
+Block - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

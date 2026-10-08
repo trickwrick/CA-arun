@@ -1,0 +1,672 @@
+/*==========================================================================
+* Services Css
+========================================================================== */
+.services__area {
+    position: relative;
+    z-index: 1;
+    background: var(--bg-white);
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 85%;
+        margin: 0 auto;
+        height: 100%;
+        background: var(--color-1);
+        z-index: -2;
+    }
+    &-title {
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &-item {
+        padding: 60px 30px;
+        text-align: center;
+        transition: all 0.4s ease-out 0s;
+        position: relative;
+        z-index: 1;
+        background: var(--bg-white);
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0;
+            transition: all 0.4s ease-out 0s;
+            background: var(--heading-color);
+            z-index: -1;
+        }
+        &-icon {
+            position: relative;
+            img {
+                max-height: 80px;
+            }
+            &-one {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0;
+                transition: all 0.4s ease-out 0s;
+                z-index: 1;             
+            }
+        }
+        &-content {
+            position: relative;
+            padding-top: 23px;
+            margin-top: 38px;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100px;
+                transition: all 0.4s ease-out 0s;
+                height: 1px;
+                background: var(--border-color-1);
+            }
+            h3 {
+                max-width: 285px;
+                margin: 0 auto;
+                a {
+                    transition: all 0.4s ease-out 0s;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &:hover {
+            &::after {
+                height: 100%;
+            }
+            h3 a {
+                color: var(--white);
+            }
+            .simple-btn {
+                color: var(--white);
+            }
+            .services__area-item {
+                &-icon {
+                    &-one {
+                        opacity: 1;
+                    }
+                }
+                &-content {
+                    &::after {
+                        width: 140px;
+                        background: var(--primary-color-3);
+                    }
+                }
+            }
+        }
+    }
+    &-page {
+        background: var(--bg-white);
+        .services__area-item:hover .services__area-item-content::after {
+            background: var(--primary-color-1);
+        }
+        .services__area-item {
+            box-shadow: 0 0 70px var(--shadow);
+        }
+    }
+}
+/*==========================================================================
+* Services Two Css
+========================================================================== */
+.services__two {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 110px 0;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: var(--primary-color-1);
+        z-index: -1;
+        opacity: 90%;
+    }    
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 275px;
+        background: var(--color-1);
+        z-index: -1;
+    }
+    &-title {
+        text-align: center;
+        h2 {
+            color: var(--white);
+        }
+        .subtitle-one {
+            color: var(--white);
+        }
+    }
+    &-item {
+        &-area {
+            background: var(--bg-white);
+            text-align: center;
+            transition: all 0.4s ease-out 0s;
+            padding: 60px;
+            &-icon {
+                width: 120px;
+                height: 120px;
+                line-height: 120px;
+                border: 1px solid var(--border-color-1);
+                display: inline-block;
+                border-radius: 50%;
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                margin-bottom: 30px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: var(--bg-white);
+                    width: 0;
+                    height: 0;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: all 0.4s ease-out 0s;
+                    z-index: -1;
+                }
+                img {
+                    max-width: 50px;
+                }
+            }
+            &-content {
+                h4 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        a {
+            display: block;
+            background: var(--primary-color-1);
+            color: var(--white);
+            font-size: 16px;
+            padding: 17px 35px;
+            text-align: center;
+            font-weight: 700;
+            z-index: 3;
+            position: relative;
+            transition: all 0.4s ease-out 0s;
+            align-items: center;
+            opacity: 0;
+            border-radius: 0 0 5px 5px;
+            i {
+                font-size: 12px;
+                margin-left: 10px;
+            }            
+        }
+        &.swiper-slide.swiper-slide-active.services__two-item {
+            a {
+                opacity: 1;
+            }
+            .services__two-item-area {
+                background: var(--color-1);
+                &-icon {
+                    border: 1px solid var(--color-1);
+                    &::after {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            } 
+        } 
+    }
+	&-button {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;      
+        &-next,  
+		&-prev {			
+            display: inline-block;
+            margin: 0;
+            left: 210px;
+            position: absolute; 
+			i {
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                line-height: 50px;
+                text-align: center;
+                border: 1px solid #e76e72;
+                font-size: 18px;
+                color: var(--white);
+                border-radius: 5px;
+                transition: all 0.4s ease-in-out;	
+			}
+			&:hover i {
+				background: var(--bg-white);
+				color: var(--primary-color-1);
+                border-color: var(--bg-white);
+			}  
+		}
+		&-next {
+            left: auto;
+            right: 210px;
+		}
+	}
+    &-appointment {
+        text-align: center;
+        max-width: 650px;
+        margin: 0 auto;
+        h5 a {
+            color: var(--primary-color-1);
+            font-size: 14px;
+        }
+    } 
+}
+/*==========================================================================
+* Services Three Css
+========================================================================== */
+.services__three {
+    background: var(--bg-white);
+    &-title {
+        text-align: center;
+    }
+    &-item {
+        padding: 50px;
+        border: 1px solid var(--color-1);
+        position: relative;
+        z-index: 1;
+        transition: 0.4s;
+        > span {
+            font-size: 160px;
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+            color: var(--heading-color);
+            opacity: 0.03;
+            z-index: -1;
+            font-weight: 700;
+        }
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 30px;
+            margin-bottom: 24px;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color-1);
+            &-icon img {
+                max-height: 60px;
+            }
+            &-content {
+                span {
+                    font-size: 14px;
+                    position: static;
+                    font-weight: 400;
+                    color: var(--body-color);
+                }
+                h4 a {
+                    transition: all 0.4s ease-out 0s;
+                    &:hover {
+                        color: var(--primary-color-2);
+                    }                    
+                }
+            }
+        }
+        &:hover {
+            box-shadow: 0 0 70px var(--shadow);
+            border-color: var(--white)
+        }
+    }
+    &-appointment {
+        padding: 22px 35px;
+        background: var(--primary-color-2);
+        margin-top: 80px;
+        border-radius: 5px;
+        &-left {
+            h5 {
+                color: var(--white);
+            }
+        }
+        &-right {
+            text-align: right;
+            .theme-btn4 {
+                line-height: 50px;
+                padding: 0 30px;
+                background: transparent;
+                border: 1px solid var(--white);
+                color: var(--white);
+                font-size: 14px;                
+                &::after {
+                    background: var(--bg-white);
+                }
+                &:hover {
+                    color: var(--primary-color-2);
+                }
+            }            
+        }
+    }
+}
+/*==========================================================================
+* Services Details Css
+========================================================================== */
+.service__details {
+    background: var(--bg-white);
+    &-left {
+        &-content {
+            &-list {
+                margin: 35px 0;
+                &-item {
+                    background: var(--bg-white);
+                    border: 1px solid var(--border-color-1);
+                    box-shadow: 0 0 70px var(--shadow);
+                    transition: all 0.4s ease-out 0s;
+                    padding: 22px 30px;
+                    display: flex;
+                    align-items: center;
+                    gap: 25px;                    
+                    &-icon {
+                        position: relative;
+                        &-one {
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            opacity: 0;
+                            width: 100%;
+                            transition: all 0.4s ease-out 0s;
+                            z-index: 1;             
+                        }
+                    }
+                    &-content {
+                        h6 {
+                            transition: all 0.4s ease-out 0s;
+                            i {
+                                float: right;
+                                margin-top: -7px;
+                                transition: all 0.4s ease-out 0s;
+                                color: var(--body-color);
+                            }
+                        }
+                    }
+                    &:hover {
+                        background: var(--heading-color);
+                        .service__details-left-content-list-item {
+                            &-icon {
+                                &-one {
+                                    opacity: 1;            
+                                }
+                            }
+                            &-content {
+                                h6 {
+                                    color: var(--white);
+                                    i {
+                                        color: var(--text-heading-color);
+                                    }
+                                }
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+* Appointment Css
+========================================================================== */
+.appointment {
+    position: relative;
+    z-index: 1;
+    padding: 40px 0;    
+    background: var(--bg-white);    
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 85%;
+        margin: 0 auto;
+        height: 100%;
+        background: var(--primary-color-3);
+        z-index: -2;
+    }
+    &-left {
+        h3 {
+            font-size: 30px;
+            color: var(--white);
+            line-height: 40px;
+        }
+    }
+    &-right {
+        text-align: right;
+        .simple-btn {
+            color: var(--white);
+        }
+    }
+}
+@media (max-width: 1850px) {
+    .services__two {        
+        &-button {      
+            &-prev {
+                left: 100px;  
+            }
+            &-next {
+                right: 100px;
+            }
+        }
+    }
+}
+@media (max-width: 1600px) {
+	.services__area { 
+        &::after {
+            width: 100%;
+        }
+    }
+    .appointment {  
+        &::after {
+            width: 100%;
+        }
+    }
+    .services__two {        
+        &-button {      
+            &-prev {
+                left: 10px;  
+            }
+            &-next {
+                right: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+	.services__area {
+        &-page {
+            &-skill {
+                &-left {
+                    margin-right: 60px;
+                }
+            }
+        }
+    }    
+    .appointment {
+        &-left {
+            h3 {
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }        
+    }
+    .services__three {
+        &-item {
+            padding: 40px 30px;
+        }
+    }
+    .service__details {
+        &-left {
+            &-content {
+                &-list {
+                    &-item {
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+	.services__area {
+        &-title {
+            max-width: 800px;
+        }
+        &-item {
+            &-content {
+                h3 {
+                    font-size: 22px;
+                    line-height: 32px;                    
+                }
+            }
+        }
+        &-page {
+            &-skill {
+                &-left {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+    .appointment {
+        &-left {
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }        
+    }
+    .services__three {
+        &-item {
+            padding: 40px 25px;
+            &-top {
+                padding-bottom: 25px;
+                margin-bottom: 19px;                
+                &-content {
+                    h4 {
+                        font-size: 18px;                   
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+        &-appointment {
+            &-left {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            &-right {
+                text-align: center;           
+            }
+        }
+    }
+    .service__details {
+        &-left {
+            &-content {
+                &-list {
+                    &-item {
+                        &-content {
+                            h6 {
+                                font-size: 14px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .services__area {        
+        &-page {
+            &-skill {
+                &-left {
+                    margin-right: 0;
+                }
+                &-right {
+                    &-image {
+                        img {
+                            width: 100%;
+                        }
+                        &-video-icon {
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);           
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .appointment {
+        &-left {
+            text-align: center;
+            margin-bottom: 10px;
+        }        
+        &-right {
+            text-align: center;
+        }        
+    }
+    .service__details {
+        &-left {
+            &-content {
+                &-list {
+                    &-item {
+                        &-content {
+                            h6 {
+                                font-size: 16px;
+                                line-height: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 650px) {
+    .services__two {        
+        &-button {
+            display: none;
+        }
+    }
+}
+@media (max-width: 494px) {
+    .services__two {  
+        &::after {
+            height: 300px;
+        }
+        &-item {
+            &-area {
+                padding: 50px 30px;
+            }
+        }
+    }
+}
+@media (max-width: 330px) {
+    .services__two {  
+        &::after {
+            height: 328px;
+        }
+    }
+}

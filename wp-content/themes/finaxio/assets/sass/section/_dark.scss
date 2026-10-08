@@ -1,0 +1,103 @@
+/*==========================================================================
+* Dark CSS
+==========================================================================*/
+.light-n {
+    display: none;
+}
+.light {
+	display: none;
+}
+.dark-mode {
+    background: #0E0E0E;
+    --bg-white: #0E0E0E;
+    --color-1: #181818;
+    --text-heading-color: #FFFFFF;
+    --border-color-1: #2c2c2c;
+    --border-color-2: #2c2c2c;
+    --shadow: rgba(255, 255, 255, 0.05);
+    --heading-color: #181818;
+    .team__area-item-image img,
+    .about__area-left-image > img,
+    .team__three-item-image > img,
+    .dark__image img {
+        filter: grayscale(100%);
+    }
+    .light-n {
+        display: inline-block;
+    }
+    .dark-n {
+        display: none;
+    }
+    .footer__area::after {
+        opacity: 0.06;
+    }
+    .page__banner::before,
+    .banner__three::before,
+    .banner__area-image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: var(--white);
+        mix-blend-mode: color;        
+    }
+    .pricing__area-item:hover .pricing__area-item-btn a {
+        background: var(--bg-white);
+        border-color: var(--bg-white);
+    }    
+    .services__area-item::after {
+        background: #1a1a1a;
+    }
+    .services__three-item {
+        background: #1C1E22;
+        border-color: #1C1E22;
+        &:hover {
+            border-color: #1C1E22;            
+        }
+        span {
+            color: #222429;
+        }
+    }
+    .services__area-page .services__area-item {
+        background: #1C1E22;
+        box-shadow: none;
+    }
+    .blog__three {
+        background: #1C1E22;
+    }    
+    .theme-banner-btn,
+    .theme-banner-btn1 {
+        &:hover {
+            color: #FFFFFF;
+        }
+        &::after {
+            background: var(--primary-color-3);
+        } 
+    }
+    .theme-banner-btn::after {
+        background: var(--color-12);        
+    }
+    .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+        background: #222429;
+    }
+ 
+    .mode__switch::before {
+        left: calc(100% - 31px); 
+    }
+ 
+    .header__area-menu-bar-main-menu ul li .sub-menu li {
+        border-bottom: 1px solid #343434;
+    }
+    .header__area-menu-bar-main-menu ul li .sub-menu li a {
+        color: #ededed;
+    }
+    .sponsors__area-brand img {
+        filter: contrast(0.1);
+    }
+    .faq__two-right-bottom i {
+        background: #3a3d43;
+    }
+}

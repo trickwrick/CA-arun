@@ -1,0 +1,304 @@
+/*==========================================================================
+* Top Bar Css
+========================================================================== */
+.header__area {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    &-top-bar {
+        background: var(--primary-color-3);
+        padding: 7px 25px;
+        &-left {
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 20px;
+                    list-style: none;
+                    padding-right: 20px;
+                    border-right: 1px solid var(--white);
+                    &:last-child {
+                        margin: 0;
+                        padding: 0;
+                        border: 0;                            
+                    }
+                    a {
+                        color: var(--white);
+                        font-size: 14px;
+                        line-height: 24px;
+                        i {
+                            color: var(--white);
+                            position: relative;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        &-right {
+            display: flex;
+            justify-content: end;
+            &-item {
+                margin-left: 50px;
+                padding-left: 40px;
+                border-left: 2px solid var(--color-3);
+                &-menu {
+                    ul {
+                        li {
+                            display: inline-block;
+                            list-style: none;
+                            margin-right: 25px;
+                            &:last-child {
+                                margin: 0;
+                                padding: 0;
+                            }
+                            a {
+                                color: var(--white);
+                            }
+                        }
+                    }
+                }
+                &:first-child {
+                    border: 0;
+                    padding: 0;
+                    margin: 0;
+                }               
+            }
+        }
+    }
+}
+/*==========================================================================
+* Top Bar Two Css
+========================================================================== */
+.header__two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;    
+    &-top-bar {      
+        background: var(--heading-color);
+        padding: 7px 0;  
+        &-left {
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 30px;
+                    list-style: none;
+                    &:last-child {
+                        margin: 0;                          
+                    }
+                    a {
+                        color: var(--white);
+                        font-size: 14px;
+                        line-height: 24px;
+                        transition: 0.4s;
+                        &:hover {
+                            color: var(--primary-color-1);
+                        }
+                        i {
+                            color: var(--color-9);
+                            position: relative;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        } 
+        &-right {
+            text-align: right;
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 30px;
+                    list-style: none;
+                    &:last-child {
+                        margin: 0;                          
+                    }
+                    a {
+                        color: var(--color-8);
+                        font-size: 14px;
+                        line-height: 24px;
+                        span {
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    
+}
+/*==========================================================================
+* Top Bar Three Css
+========================================================================== */
+.header__three {
+    &-top-bar {
+        background: var(--color-1);
+        padding: 7px 25px;
+        &-left {
+            &-menu {
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right: 15px;
+                        list-style: none;
+                        padding-right: 15px;
+                        &:last-child {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        a {
+                            color: var(--text-heading-color);
+                            transition: all 0.4s ease-out 0s;
+                            font-weight: 700;
+                            &:hover {
+                                color: var(--primary-color-2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-right {
+            text-align: right;
+            ul {
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    margin-right: 15px;
+                    a {
+                        color: var(--text-heading-color);
+                        font-size: 14px;
+                        transition: all 0.4s ease-out 0s;
+                        &:hover {
+                            color: var(--primary-color-2);
+                        }
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .header__area {
+        &-top-bar {
+            &-right {
+                &-item {
+                    margin-left: 30px;
+                    padding-left: 30px;              
+                }
+            }
+        }
+    }
+    .header__two {   
+        &-top-bar {      
+            &-left {
+                text-align: center;
+                ul {
+                    li {
+                        margin-right: 15px;
+                        a {
+                            i {
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+            } 
+            &-right {
+                text-align: center;
+            } 
+        }
+        
+    }
+}
+@media (max-width: 768px) {
+    .header__area {
+        &-top-bar {
+            &-left {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            &-right {
+                justify-content: center;
+                &-item {
+                    &-language {
+                        .nice-select {
+                            .list {
+                                width: 136px;
+                                z-index: 9999;
+                            }
+                        }
+                    }               
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) {    
+    .header__three {
+        &-top-bar {
+            background: var(--color-1);
+            padding: 7px 25px;
+            &-left {
+                &-menu {
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+            }
+            &-right {
+                text-align: center;
+            }
+        }
+    }
+}
+@media (max-width: 476px) {
+    .header__two {
+        &-top-bar {
+            &-right {
+                ul {
+                    li {
+                        margin: 0;
+                        margin: 0 20px;
+                    }
+                }
+            } 
+        }
+    }
+}
+@media (max-width: 396px) {
+    .header__area {
+        &-top-bar {
+            &-left {
+                ul {
+                    li {
+                        margin-right: 4px;
+                        padding-right: 4px;
+                        border: 0;
+                        a {
+                            i {
+                                margin-right: 9px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-right {
+                &-item {
+                    &-language {
+                        .nice-select {
+                            .list {
+                                right: auto;
+                                left: 0;
+                            }
+                        }
+                    }               
+                }
+            }
+        }
+    }
+}

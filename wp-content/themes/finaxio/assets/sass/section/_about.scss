@@ -1,0 +1,387 @@
+/*==========================================================================
+* About One Css
+========================================================================== */
+.about__area {
+    background: var(--bg-white);
+    &-left {
+        margin-right: 95px;
+        margin-bottom: 60px;
+        &-image {
+            position: relative;
+            &-content {
+                position: absolute;
+                right: -40px;
+                bottom: -60px;
+                background: var(--primary-color-3);
+                padding: 58px 42px;
+                display: inline-block;
+                text-align: center;
+                border-radius: 0 0 95px 0;
+                &.page {
+                    background: var(--primary-color-1);
+                }
+                &-icon {
+                    img {
+                        max-width: 60px;
+                    }
+                    margin-bottom: 20px;
+                }
+                span {
+                    color: var(--white);
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+                h2 {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    &-right {
+        &-title {
+            h2 {
+                margin-bottom: 17px;
+            }
+            p {
+                max-width: 520px;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        &-list {
+            margin-top: 35px;
+            h5 {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                i {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    border: 1px solid var(--border-color-1);
+                    display: inline-block;
+                    box-shadow: 0 0 60px var(--shadow);
+                    margin-right: 20px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: var(--primary-color-3);
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            &.page {
+                h5 i {
+                    color: var(--primary-color-1);
+                }                
+            }
+        }
+        &-bottom {
+            display: flex;
+            align-items: center;
+            margin-top: 35px;
+            &-item {
+                margin-right: 40px;
+                &-author {
+                    display: flex;
+                    align-items: center;
+                    &-image {
+                        margin-right: 20px;
+                        img {
+                            max-width: 60px;
+                        }
+                    }
+                    &-content {
+                        span {
+                            font-size: 14px;
+                            display: inline-block;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+* About Two Css
+========================================================================== */
+.about__two {
+    background: var(--bg-white);
+    &-left {
+        margin-right: 50px;
+        &-image {
+            position: relative;
+            margin-bottom: 210px;
+            &-one {
+                position: absolute;
+                right: 0;
+                bottom: -210px;
+            }
+        }
+    }
+    &-right {
+        &-title {
+            h2 {
+                margin-bottom: 30px;
+            }
+        }
+        &-contact {
+            display: flex;
+            margin: 45px 0;
+            &-icon {
+                margin-right: 20px;
+                margin-top: 7px;
+            }
+            &-content {
+                p {
+                    margin-bottom: 10px;
+                    span {
+                        color: var(--text-heading-color);
+                        font-weight: 700;
+                    }
+                }
+                h3 {
+                    font-size: 30px;
+                    line-height: 30px;
+                    span {
+                        font-size: 16px;
+                        color: var(--body-color);
+                        padding: 0 10px;
+                        font-weight: 400;
+                    }
+                    a {
+                        transition: all 0.4s ease-out 0s;
+                        display: inline-block;
+                        &:hover {
+                            color: var(--primary-color-1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+* About Three Css
+========================================================================== */
+.about__three {
+    background: var(--bg-white);
+    &-left {
+        margin-right: 15px;
+        position: relative;
+    }
+    &-right {
+        margin-left: 30px;
+        &-title {
+            h2 {
+                margin-bottom: 30px;
+            }
+        }
+        &-author {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            &-avatar {
+                display: flex;
+                align-items: center;
+                margin-right: 30px;
+                &-title {
+                    margin-left: 20px;
+                    span {
+                        font-size: 14px;
+                    }
+                }                
+            }
+        }
+        &-contact {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color-1);
+            &-info {
+                margin-left: 20px;
+                display: flex;
+                align-items: center;
+                &-title {
+                    span {
+                        font-size: 14px;
+                    }
+                    h5 a {
+                        transition: all 0.4s ease-out 0s;
+                        &:hover {
+                            color: var(--primary-color-2);
+                        }
+                    }
+                }
+                &-icon {
+                    margin-left: 70px;
+                    i {
+                        font-size: 40px;
+                        color: var(--primary-color-2);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+	.about__two {
+        &-right {
+            &-contact {
+                &-content {
+                    h3 {
+                        font-size: 22px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+	.about__area {
+        &-left {
+            margin-right: 55px;
+        }
+        &-right {
+            &-bottom {
+                &-item {
+                    margin-right: 24px;
+                    &-author {
+                        &-image {
+                            margin-right: 10px;
+                        }
+                        &-content {
+                            h4 {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about__two {
+        &-left {
+            margin-right: 30px;
+            &-image {
+                margin-bottom: 160px;
+                &-one {
+                    bottom: -160px;
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+    .about__three {
+        &-left {
+            margin-right: 0;
+        }
+        &-right {
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .about__two {
+        &-left {
+            margin-right: 0;
+        }
+    }
+    .about__three {
+        &-left {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 483px) {
+	.about__area {
+        &-left {
+            margin-right: 40px;
+            &-image {
+                &-content {
+                    padding: 48px 42px;
+                    border-radius: 0 0 85px 0;
+                }
+            }
+        }
+        &-right {
+            &-title {
+                p {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+            &-list {
+                h5 {
+                    font-size: 16px;
+                    line-height: 26px;
+                    i {
+                        margin-right: 15px;
+                    }
+                }
+            }
+            &-bottom {
+                display: inline-block;
+                &-item {
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                    &-author {
+                        &-image {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about__two {
+        &-right {
+            &-contact {
+                &-content {
+                    p {
+                        margin-bottom: 0;
+                    }
+                    h3 {
+                        font-size: 14px;
+                        line-height: 24px;
+                        span {
+                            font-size: 14px;
+                            padding: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about__three {
+        &-right {
+            &-author {
+                &-signature {
+                    display: none;
+                }
+                &-avatar-title {
+                    h4 {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            &-contact {
+                display: inline-block;
+                &-info {
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

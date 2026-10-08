@@ -1,0 +1,47 @@
+
+---Downloaded files---
+The import files for: Home 01 - Light were successfully downloaded!
+Initial max execution time = 480
+Files info:
+Site URL = https://agrawalgoyanka.co.in
+Data file = /home/u894712264/domains/agrawalgoyanka.co.in/public_html/wp-content/themes/finaxio//inc/demo-content/demo/content.xml
+Widget file = /home/u894712264/domains/agrawalgoyanka.co.in/public_html/wp-content/themes/finaxio//inc/demo-content/demo/widget.wie
+Customizer file = /home/u894712264/domains/agrawalgoyanka.co.in/public_html/wp-content/themes/finaxio//inc/demo-content/demo/customizer.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Right Sidebar : 
+
+Block - No Title - Widget already exists
+Recent Post - finaxio - No Title - Imported
+Block - No Title - Imported
+
+Service Sidebar : 
+
+Menu Lists - finaxio - No Title - Imported
+Download Info - finaxio - Our Materials - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

@@ -1,0 +1,243 @@
+/*==========================================================================
+* Testimonial Css
+========================================================================== */
+.testimonial__area {
+    background: var(--heading-color);
+    position: relative;
+    z-index: 2;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../assets/img/bg/testimonials-bg.png');
+        background-repeat: no-repeat;
+        z-index: -1;
+        opacity: 0.1;
+    }    
+    &-title {
+        text-align: center;
+        h2 {
+            color: var(--white);
+        }
+    }
+    &-item {
+        background: var(--color-14);
+        padding: 50px 40px;     
+        &-review {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: var(--color-7);
+                transition: 0.4s;
+            }          
+            &::after {
+                position: absolute;
+                content: '';
+                left: 70px;
+                bottom: -20px;
+                border-top: 20px solid var(--color-7);
+                border-right: 30px solid transparent;
+                transition: 0.4s;
+                display: block;
+            }          
+            i {
+                color: var(--primary-color-3);
+            }
+            p {
+                font-size: 18px;
+                line-height: 28px;
+                padding-top: 20px;
+                color: var(--white);
+                max-width: 600px;
+            }
+        }
+        &-client {
+            display: flex;
+            align-items: center;
+            &-avatar {
+                margin-right: 20px;
+                img {
+                    max-width: 60px;
+                }
+            }
+            &-title {
+                span {
+                    color: var(--primary-color-3);
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                h3 {
+                    color: var(--white);
+                }
+            }
+        }
+        &:hover {
+            .testimonial__area-item-review {
+                &::before {
+                    background: var(--primary-color-3);
+                }          
+                &::after {
+                    border-top: 20px solid var(--primary-color-3);
+                }  
+            }
+        }
+    }
+}
+/*==========================================================================
+* Users Css
+========================================================================== */
+.user__area {
+    background: var(--primary-color-2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-title {
+        text-align: center;
+        h2 {
+            color: var(--white);
+            max-width: 700px;
+            margin: 0 auto;            
+        }
+        .subtitle-three {
+            color: var(--white);
+        }
+    }
+    &-item {
+        text-align: center;
+    }
+}
+/*==========================================================================
+* Action Css
+========================================================================== */
+.action__area {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    &-list-item {
+        text-align: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--border-color-1);
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        h1 {
+            font-size: 100px;
+            line-height: 110px;
+            color: var(--primary-color-2);
+        }
+        &:last-child {
+            border: 0;
+            padding: 0;
+            margin: auto;
+        }
+    }
+    &-title {
+        margin-left: 60px;
+        h2 {
+            color: var(--white);      
+            margin-bottom: 155px;    
+        }
+        .subtitle-three {
+            color: var(--white);
+        }
+        .theme-btn4 {
+            background: var(--bg-white);           
+            color: var(--text-heading-color);
+            &::after {
+                background: var(--primary-color-2);
+            }
+            &:hover {
+                color: var(--white);
+            }
+        }
+    }    
+}
+@media (max-width: 1199px) {
+    .action__area {
+        &-title {
+            margin-left: 40px;
+            h2 {
+                margin-bottom: 135px;    
+            }
+        }    
+    }
+}
+@media (max-width: 991px) {
+    .action__area {
+        &-list-item {
+            text-align: left;
+            width: auto;
+            h1 {
+                font-size: 80px;
+                line-height: 90px;
+            }
+        }
+        &-title {
+            margin-left: 40px;
+            h2 {
+                margin-bottom: 135px;    
+            }
+        }    
+    }
+}
+@media (max-width: 767px) {
+    .action__area {
+        padding: 0;
+        overflow: hidden;
+        &-list {
+            position: relative;
+            padding-top: 120px;
+            padding-bottom: 50px;
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                left: -130px;
+                top: 0;
+                width: 780px;
+                height: 100%;
+                background: var(--color-1);
+                z-index: -1;
+            } 
+            &-item {
+                text-align: center;
+                h1 {
+                    font-size: 60px;
+                    line-height: 70px;
+                }
+            }
+        }
+        &-title {
+            padding-top: 50px;
+            padding-bottom: 120px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            margin-left: 0;
+            &::before {
+                content: '';
+                position: absolute;
+                left: -130px;
+                bottom: 0;
+                width: 780px;
+                height: 100%;
+                background: var(--heading-color);
+                z-index: -1;
+            } 
+            h2 {
+                margin-bottom: 50px;    
+            }
+        }   
+    }
+}

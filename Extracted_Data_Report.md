@@ -1,0 +1,73 @@
+# Extracted Data Report
+
+This report outlines all the pages, templates, and components extracted from the WordPress Elementor SQL dump (`u894712264_OdPBc (1).sql`).
+
+### Summary
+- **Total Items Extracted:** 266
+- **Purpose:** Used to migrate the old WordPress site into the new Next.js framework.
+
+### Extracted Pages & Components
+- A Guide To Attracting Clients To Your Agency
+- About
+- Advance Analytics
+- Analysis Opportunities
+- Banking Sector
+- Blog Grid
+- Blog Single
+- Business Consultancy Service
+- Business Lineup Service
+- Business Security Solution
+- Careers
+- Contact
+- Corporate Finance
+- Create a business LLC or Corporation
+- Determine If You Need a State Tax ID Number
+- Different Ways To Design Digital Product Pages
+- Digital Strategy
+- Education Institute
+- FAQ
+- Finance &amp; Business Lineup
+- Financial Consultancy
+- Find Your New Curve
+- Footer 01
+- Footer 02
+- Footer 03
+- Get An Appointment
+- Header 01
+- Header 02
+- Header 03
+- Home One - Dark
+- Home One - Light
+- Home Three - Dark
+- Home Three - Light
+- Home Two - Dark
+- Home Two - Light
+- Make better decisions
+- Mikado consultancy
+- Obtain Business Permits and Licenses
+- Offcanvas
+- Online &amp; Offline Support
+- Pao Financial Wisdom
+- Pao finance solution
+- Paolo Web Elegance
+- Paolo website design
+- Porject Single
+- Price Item - Monthly
+- Privacy Policy
+- Private Security
+- Project
+- Service Single
+- Services
+- Strategic Consulting Services
+- Team
+- Team Single
+- The transform community create a lasting impact.
+- Trudie Styler
+- We work to understand your issues
+- footer 01
+- header 01
+- home
+- home 011
+- home 22
+- home 33
+- price

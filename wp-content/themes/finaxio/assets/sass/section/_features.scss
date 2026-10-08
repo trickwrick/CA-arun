@@ -1,0 +1,265 @@
+/*==========================================================================
+* Features Css
+========================================================================== */
+.features__area {
+    &-item {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        padding: 70px 60px;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: var(--heading-color);
+            z-index: -1;
+            opacity: 70%;
+            transition: 0.4s;
+        }
+        h3 {
+            color: var(--white);
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 15px;
+        }
+        p {
+            color: var(--white);
+            opacity: 70%;
+            margin-bottom: 30px;
+            max-width: 420px;
+        }        
+        .simple-btn {
+            transition: 0.4s;
+        }
+        &-hover {
+            &::after {
+                background: var(--primary-color-1);
+                opacity: 80%;
+            }
+            .simple-btn {
+                color: var(--white);
+            }
+        }
+    }
+}
+/*==========================================================================
+* SkillBar Css
+========================================================================== */
+.skill__area {
+    margin-left: 10px;
+    h3 {
+        margin-bottom: 10px;
+    }
+    > p {
+        margin-bottom: 40px;
+    }
+    &-item {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+        &-content {
+            position: relative;
+            h6 {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        &-count {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-weight: 500;
+        }
+        &-bar {
+            height: 8px;
+            position: absolute;
+            width: 0;
+            top: -1.4px;
+            left: 0;
+            background: var(--primary-color-1);
+            transition: all 3.5s ease-out 0s;
+        }
+        &-inner {
+            width: 100%;
+            height: 5px;
+            position: relative;
+            background: var(--border-color-2);
+            margin-top: 11px;
+        }
+    }
+}
+/*==========================================================================
+* Deposit Css
+========================================================================== */
+.deposit__area {
+    background: var(--bg-white);
+    &-left {
+        &-title {
+            h2 {
+                margin-bottom: 50px;
+            }
+        }
+        &-form {
+            &-item {
+                position: relative;
+                select {
+                    width: 100%;
+                    height: 60px;
+                    padding: 0 20px;
+                    border-radius: 5px;
+                    background: transparent;
+                    appearance: none;
+                    color: var(--body-color);
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                input {
+                    font-size: 14px;
+                    padding-left: 20px;
+                }
+                label {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: var(--text-heading-color);
+                    position: absolute;
+                    left: 20px;
+                    top: -14px;
+                    background: var(--bg-white);
+                    z-index: 1;
+                    padding: 0 8px;
+                    span {
+                        color: var(--primary-color-1);
+                    }
+                }
+                &.category {
+                    position: relative;
+                    z-index: 1;
+                    &::before {
+                        content: "\f078";
+                        font-family: "Font Awesome 5 Pro";
+                        font-weight: 400;
+                        position: absolute;
+                        right: 15px;
+                        font-size: 12px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: var(--primary-color-1);
+                    }
+                }
+            }
+        }
+    }
+    &-right {
+        text-align: right;
+    }
+}
+/*==========================================================================
+* Work Css
+========================================================================== */
+.work__area {
+    background: var(--bg-white);
+    &-left {
+        &-title {
+            p {                
+                max-width: 600px;
+                font-size: 18px;   
+            }         
+        }
+        &-list {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            &-icon {
+                margin-top: 8px;
+                img {
+                    width: auto;
+                    max-width: inherit;
+                }
+            }
+            &-content {
+                margin-left: 20px;
+                p {
+                    font-size: 14px;
+                    margin-top: 5px;
+                    span {
+                        font-weight: 700;
+                        color: var(--text-heading-color);
+                    }
+                }
+                h6 {
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+    &-right {
+        &-item {
+            padding: 50px 30px;
+            text-align: center;
+            position: relative;
+            border: 1px solid var(--border-color-1);
+            transition: 0.4s;
+            z-index: 1;
+            &-icon {
+                margin-bottom: 20px;
+                img {
+                    max-width: 60px;
+                }
+            }
+            &-content {
+                h5 {
+                    margin-bottom: 10px;
+                }
+                span {
+                    font-size: 14px;
+                }
+                b {
+                    font-size: 160px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                    color: var(--heading-color);
+                    opacity: 0.03;
+                    width: 100%;
+                }
+            }
+            &:hover {
+                box-shadow: 0 16px 35px var(--shadow);
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .features__area {
+        &-item {
+            padding: 70px 50px;
+        }
+    }
+    .deposit__area {
+        &-right {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 1299px) {
+    .features__area {
+        &-item {
+            padding: 50px 30px;
+            h3 {
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }
+    }
+}

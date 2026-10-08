@@ -1,0 +1,167 @@
+/*==========================================================================
+* Contact Css
+========================================================================== */
+.contact__area {
+    background: var(--bg-white);
+    &-map {
+        padding-top: 120px;
+        background: var(--bg-white);
+        &-area {
+            position: relative;
+            iframe {
+                width: 100%;
+                height: 600px;
+                display: block;
+                filter: grayscale(1);
+            }
+            &-icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: inline-block;
+            }
+        }
+    }
+    &-left {
+        margin-right: 30px;
+        &-list {
+            margin-right: 10px;
+            &-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid var(--border-color-1);
+                &-icon {
+                    i {
+                        font-size: 26px;
+                        color: var(--primary-color-1);
+                    }
+                }
+                &-content {
+                    p a {
+                        transition: all 0.4s ease-out 0s;
+                        &:hover {
+                            color: var(--primary-color-1);
+                        }
+                    }
+                }
+                &:last-child {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                }
+            }
+        }
+        &-hours {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 40px;
+            h4 {
+                color: var(--white);
+                margin-bottom: 20px;
+            }
+            h6 {
+                color: var(--white);
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid var(--heading-color);
+                span {
+                    float: right;
+                    color: var(--color-8);
+                    font-weight: 400;
+                }
+                &:last-child {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    span {
+                        color: var(--primary-color-1);
+                    }
+                }
+            }
+        }
+    }
+    &-right {
+        background: var(--color-1);
+        padding: 40px;
+        &-form {
+            &-item {
+                position: relative;
+                i {
+                    position: absolute;
+                    right: 20px;
+                    top: 23px;
+                    color: var(--text-heading-color);
+                }
+                input {
+                    font-size: 14px;
+                }
+                textarea {
+                    height: 220px;
+                    font-size: 14px;
+                }
+                .theme-btn3 {
+                    width: 100%;
+                    justify-content: center;
+                    font-size: 14px;
+                    i {
+                        position: initial;
+                        color: var(--white);
+                    }
+                }
+                select {
+                    width: 100%;
+                    height: 60px;
+                    padding: 0 20px;
+                    border-radius: 5px;
+                    background: var(--bg-white);
+                    appearance: none;
+                    color: var(--body-color);
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                &.select {
+                    position: relative;
+                    z-index: 1;
+                    &::before {
+                        content: "\f078";
+                        font-family: "Font Awesome 5 Pro";
+                        font-weight: 300;
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: var(--text-heading-color);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .contact__area {
+        &-left {
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .contact__area {
+        &-left {
+            &-list {
+                margin-right: 0;
+            }
+            &-hours {
+                padding: 40px 30px;
+            }
+        }
+        &-right {
+            padding: 40px 30px;
+        }
+    }
+}

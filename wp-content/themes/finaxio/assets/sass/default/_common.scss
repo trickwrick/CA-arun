@@ -1,0 +1,590 @@
+/*------------------------------------------------------------------------
+
+Template Name:  Finaxio - Business WordPress Theme
+Author:  ThemeOri
+Author URI: http://ThemeOri.com
+Version: 1.0.0
+Description: This Template is created for WordPress
+
+--------------------------------------------------------------------------
+TABLE OF CONTENTS
+--------------------------------------------------------------------------
+* Common Css
+* Form Css
+* Hedging CSS
+* Theme Btn CSS
+* Scroll Top CSS
+* Video Animation CSS
+* Finaxio Font And Color
+* Space Css
+* Top Bar Css
+* Top Bar Two Css
+* Top Bar Three Css
+* All Side Bar Css
+* Banner One Css
+* Banner Two Css
+* Banner Three Css
+* About One Css
+* About Two Css
+* About Three Css
+* Blog Css
+* Blog Two Css
+* Blog Three Css
+* Blog Details Css
+* Blog Standard Css
+* Pagination Css
+* FAQ Css
+* FAQ Two Css
+* Contact Css
+* Pricing Css
+* Features Css
+* SkillBar Css
+* Deposit Css
+* Work Css
+* Footer Css
+* Footer Two Css
+* Footer Top Two Css
+* Footer Three Css
+* Copyright Css
+* Copyright Two Css
+* Copyright Three Css
+* Sponsors Css
+* Portfolio Css
+* Portfolio Two Css
+* Portfolio Page Css
+* Portfolio Details Css
+* Services Css
+* Services Two Css
+* Services Three Css
+* Services Details Css
+* Appointment Css
+* Cta Css
+* Team Css
+* Team Two Css
+* Team Details Css 
+* Testimonial Css
+* Users Css
+* Action Css
+* Menu Bar Css
+* Menu Bar Two CSS
+* Menu Bar Three CSS
+* Menu Box CSS
+* Responsive Menu Css
+* Page Banner Css
+* Error Css
+* Company Two CSS
+* About Solution CSS
+* Company History CSS
+* Dark CSS
+* Dark Light Switch CSS
+/*==========================================================================
+* Common Css
+========================================================================== */
+body {
+	font-family: var(--body-font);
+	color: var(--body-color);
+	font-size: 16px;
+	line-height: 26px;
+  	font-weight: 400;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	transition: all 0.4s ease-out 0s;
+}
+a {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
+a,
+button,
+i {
+	text-decoration: none;
+	color: inherit;
+}
+a:focus,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+.section-padding {
+	padding: 120px 0px;
+}
+.display-none {
+	display: none;
+}
+.img__full {
+	width: 100%;
+}
+/*==========================================================================
+* Form Css
+========================================================================== */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid var(--border-color-1); 
+  border-color: transparent;
+  border-radius: 0px;
+  background: var(--primary-color-1);
+  color: var(--white);
+  line-height: 1;
+  padding: 0.6em 1em 0.4em;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: transparent;
+}
+button:active,
+button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  border-color: transparent;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: var(--text-heading-color);
+  border: 1px solid;
+  border-radius: 0px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid var(--border-color-1);
+  background: var(--bg-white);
+  padding-left: 20px;  
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  color: var(--text-heading-color);
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primary-color-1)
+}
+select {
+  border: 1px solid var(--border-color-1);
+}
+textarea {
+	width: 100%;
+	height: 150px;
+	padding-top: 15px;
+}
+button,
+button:hover,
+button:focus {
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
+/*==========================================================================
+* Hedging CSS
+========================================================================== */
+$list: (h1, 80px, 90px, 0, 0, var(--text-heading-color), var(--body-font), 700),
+(h2, 60px, 70px, 0, 0, var(--text-heading-color), var(--body-font), 700),
+(h3, 26px, 36px, 0, 0, var(--text-heading-color), var(--body-font), 700),
+(h4, 24px, 34px, 0, 0, var(--text-heading-color), var(--body-font), 700),
+(h5, 18px, 28px, 0, 0, var(--text-heading-color), var(--body-font), 700),
+(h6, 16px, 26px, 0, 0, var(--text-heading-color), var(--body-font), 700),
+(p, 16px, 26px, 0, 0, var(--body-color), var(--body-font));
+@each $name, $size, $height, $p, $m, $color, $font, $weight in $list {
+    #{$name}{
+      font-size: $size;
+      line-height: $height;
+      padding: $p;
+      margin: $m;
+      color: $color;
+      font-family: $font;
+      font-weight: $weight;
+    }
+}
+$list: left, center, right;
+@each $i in $list {
+    .t-#{$i} {
+        text-align: $i;
+    }
+}
+@media (max-width: 1399px) {
+	h2 {
+		font-size: 54px;
+		line-height: 64px;
+	}
+}
+@media (max-width: 1199px) {
+	h2 {
+		font-size: 46px;
+		line-height: 56px;
+	}
+}
+@media (max-width: 490px) {
+	h2 {
+		font-size: 32px;
+		line-height: 42px;
+	}
+}
+/*==========================================================================
+* Theme Btn CSS
+========================================================================== */
+.finaxio-core {
+	p {
+	  margin-bottom: 16px;
+	}
+	& .page p:last-child {
+	  margin-bottom: 0;
+	}
+  }
+  .finaxio-core a {
+	color: var(--heading-color);
+	transition: 0.4s;
+	&:hover {
+	  color: var(--primary-color-1);
+	}
+  }
+.theme-banner-btn ,
+.theme-banner-btn1 ,
+.theme-btn1 ,
+.theme-btn2 ,
+.theme-btn3 ,
+.theme-btn4 ,
+.theme-btn {
+	display: inline-flex;
+	background: var(--primary-color-3);
+	color: var(--white);
+	font-size: 16px;
+	padding: 0 35px;
+	text-align: center;
+	font-weight: 500;
+	z-index: 3;
+	position: relative;
+	transition: 0.4s;
+	align-items: center;
+	line-height: 60px;
+    overflow: hidden;
+	border-radius: 3px;
+    &::after {
+        position: absolute;
+        content: '';
+        position: absolute;
+        width: 100%;
+		transition: 0.4s;
+        height: 100%;
+        top: 0;
+        left: 0;
+		opacity: 0;
+        z-index: -1;
+		border-radius: 3px;
+    }
+	i {
+		font-size: 22px;
+		margin-left: 10px;
+	}
+    &:hover {
+        color: var(--white);
+        &::after {
+			opacity: 1;
+        }
+    }
+	&:focus {
+		color: var(--white);
+	}
+}
+.theme-banner-btn  {
+	background: var(--primary-color-3);
+	&:hover {
+		color: var(--heading-color);
+	}
+	&::after {
+		background: var(--bg-white);
+	}
+}
+.theme-btn1  {
+	background: var(--primary-color-3);
+	&:hover {
+		color: var(--white);
+	}
+	&::after {
+		background: var(--heading-color);
+	}
+}
+.theme-btn3  {
+	background: var(--primary-color-1);
+	&:hover {
+		color: var(--white);
+	}
+	&::after {
+		background: var(--heading-color);
+	}	
+	i {
+		font-size: 14px;
+		margin-left: 15px;
+	}
+}
+.theme-btn4  {
+	background: var(--primary-color-2);
+	&:hover {
+		color: var(--white);
+	}
+	&::after {
+		background: var(--heading-color);
+	}	
+	i {
+		font-size: 14px;
+		margin-left: 15px;
+	}
+}
+.theme-btn  {
+	background: var(--primary-color-3);
+	&:hover {
+		color: var(--white);
+	}
+	&::after {
+		background: var(--primary-color-3);
+	}
+}
+.theme-btn2  {
+	background: var(--heading-color);
+	&:hover {
+		color: var(--white);
+	}
+	&::after {
+		background: var(--primary-color-3);
+	}
+}
+.theme-banner-btn1  {
+	background: var(--primary-color-3);
+	&:hover {
+		color: var(--heading-color);
+	}
+	&::after {
+		background: var(--bg-white);
+	}
+}
+.simple-btn {
+	display: inline-block;
+	color: var(--border5);
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 500;
+	transition: all 0.4s ease-in-out;
+	text-transform: capitalize;
+	i::before {
+		position: relative;		
+		top: 1px;
+		margin-left: 8px;
+	}
+	&:hover {
+		color: var(--primary-color-3);
+	}
+}
+.subtitle-one,
+.subtitle-two,
+.subtitle-three {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--primary-color-1);
+    margin-bottom: 7px;
+	text-transform: capitalize;
+	i {
+		margin-right: 10px;
+	}
+}
+.subtitle-two {
+	color: var(--primary-color-3);
+}
+.subtitle-three {
+	color: var(--primary-color-2);
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(90deg);
+	}
+}
+/*==========================================================================
+* Scroll Top CSS
+========================================================================== */
+.scroll-up ,
+.scroll-two {
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	box-shadow: inset  0 0 0 2px var(--shadow);
+	z-index: 10000;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	height: 50px;
+	width: 50px;
+    transition: all 200ms linear;
+	&::after {
+		position: absolute;
+		font-family: 'Font Awesome 5 Pro';
+		content: "\f176";
+		text-align: center;
+		line-height: 50px;
+		font-size: 24px;
+		color: var(--primary-color-1);
+		left: 0;
+		top: 0;
+		font-size: 20px;
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+		display: block;
+		z-index: 1;
+		transition: all 200ms linear;
+	}
+	&.active-scroll {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+	svg path { 
+		fill: none; 
+	}
+	svg.scroll-circle path {
+		stroke: var(--primary-color-1);
+		stroke-width: 4;
+		box-sizing:border-box;
+		transition: all 200ms linear;
+	}
+}
+.scroll-two {
+	&::after {
+		color: var(--primary-color-1);
+	}
+	svg.scroll-circle path {
+		stroke: var(--primary-color-1);
+	}
+}
+.scroll-three {
+	&::after {
+		color: var(--primary-color-2);
+	}
+	svg.scroll-circle path {
+		stroke: var(--primary-color-2);
+	}
+}
+/*==========================================================================
+* Video Animation CSS
+========================================================================== */
+.video-pulse::after, .video-pulse::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--primary-color-1);
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	animation-duration: 2.5s;
+	animation-timing-function: linear;
+	animation-name: video-animation;
+	animation-iteration-count: infinite;
+}
+.video-pulse::before {
+	animation-delay: 1s;
+}
+@keyframes video-animation {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.2;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+/*==========================================================================
+* Preloader CSS
+==========================================================================*/
+.theme-loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: var(--heading-color);
+	z-index: 9999999999;
+}
+.spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	display: flex;
+}
+.spinner-bounce {
+	will-change: transform;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	background: var(--primary-color-1);
+	display: inline-block;
+	animation: bounces 1s ease-in-out infinite alternate;
+	transform-origin: 50% 50%;
+	&.one {
+		margin-right: 15px;
+	}
+	&.two {
+		margin-right: 15px;
+		animation-delay: .4s;
+	}
+	&.three {
+		animation-delay: .8s;
+	}
+}
+@keyframes bounces {
+	0% {
+		transform: scale(1);
+		background: var(--primary-color-1);
+	}
+	50% {
+		background: var(--primary-color-2);
+	}
+	100% {
+		transform: scale(.2);
+		background: var(--primary-color-3);
+	}
+}  
