@@ -984,7 +984,7 @@ if ( ! class_exists( 'BOOKED_Plugin_Activation' ) ) {
 		 * @param string       $source        Path to upgrade/zip-file-name.tmp/subdirectory/.
 		 * @param string       $remote_source Path to upgrade/zip-file-name.tmp.
 		 * @param \WP_Upgrader $upgrader      Instance of the upgrader which installs the plugin.
-		 * @return string $source
+		 * @return string|\WP_Error $source
 		 */
 		public function maybe_adjust_source_dir( $source, $remote_source, $upgrader ) {
 			if ( ! $this->is_bookedpa_page() || ! is_object( $GLOBALS['wp_filesystem'] ) ) {
@@ -1001,6 +1001,7 @@ if ( ! class_exists( 'BOOKED_Plugin_Activation' ) ) {
 			$desired_slug = '';
 
 			// Figure out what the slug is supposed to be.
+			/** @noinspection PhpUndefinedFieldInspection */
 			if ( false === $upgrader->bulk && ! empty( $upgrader->skin->options['extra']['slug'] ) ) {
 				$desired_slug = $upgrader->skin->options['extra']['slug'];
 			} else {
@@ -2000,7 +2001,7 @@ if ( ! class_exists( 'BOOKED_Plugin_Activation' ) ) {
 		 * @since 2.1.1
 		 */
 		public function update_dismiss() {
-			delete_metadata( 'user', null, 'bookedpa_dismissed_notice_' . $this->id, null, true );
+			delete_metadata( 'user', 0, 'bookedpa_dismissed_notice_' . $this->id, null, true );
 		}
 
 		/**
@@ -2186,7 +2187,7 @@ if ( ! class_exists( 'BOOKEDPA_List_Table' ) ) {
 		 *
 		 * @since 2.5.0
 		 *
-		 * @var object
+		 * @var BOOKED_Plugin_Activation
 		 */
 		protected $bookedpa;
 
