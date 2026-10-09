@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "nextjs-website/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/nextjs-website/$1"
+    }
+  ]
+}
