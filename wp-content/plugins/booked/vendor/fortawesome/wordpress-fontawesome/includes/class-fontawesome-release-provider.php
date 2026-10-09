@@ -423,7 +423,7 @@ EOD;
 	 *
 	 * @internal
 	 * @ignore
-	 * @deprecated
+	 * @ignore-deprecated
 	 * @return string|null most recent major.minor.patch 5.x version or null if there's
 	 *   not yet been a successful query to the API server for releases metadata.
 	 */
@@ -440,7 +440,7 @@ EOD;
 	 *
 	 * @internal
 	 * @ignore
-	 * @deprecated
+	 * @ignore-deprecated
 	 * @return string|null most recent major.minor.patch 5.x version or null if there's
 	 *   not yet been a successful query to the API server for releases metadata.
 	 */
@@ -457,7 +457,7 @@ EOD;
 	 *
 	 * @internal
 	 * @ignore
-	 * @deprecated
+	 * @ignore-deprecated
 	 * @return string|null most recent major.minor.patch 6.x version or null if there's
 	 *   not yet been a successful query to the API server for releases metadata.
 	 */

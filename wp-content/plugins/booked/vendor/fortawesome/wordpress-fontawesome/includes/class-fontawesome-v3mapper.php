@@ -5,14 +5,14 @@ namespace FortAwesome;
  * Main plugin class module.
  *
  * @noinspection PhpIncludeInspection
- * @deprecated Provided temporarily for an upgrade path for previous font-awesome plugin users.
+ * @ignore-deprecated Provided temporarily for an upgrade path for previous font-awesome plugin users.
  * @ignore
  */
 
 /**
  * FontAwesome_V3Mapper Class
  *
- * @deprecated Provided temporarily for an upgrade path for previous font-awesome plugin users.
+ * @ignore-deprecated Provided temporarily for an upgrade path for previous font-awesome plugin users.
  * @ignore
  */
 class FontAwesome_V3Mapper {
@@ -34,7 +34,7 @@ class FontAwesome_V3Mapper {
 	 *
 	 * Internal use only, not part of this plugin's public API.
 	 *
-	 * @deprecated Provided temporarily for an upgrade path for previous font-awesome plugin users.
+	 * @ignore-deprecated Provided temporarily for an upgrade path for previous font-awesome plugin users.
 	 * @return FontAwesome_V3Mapper
 	 * @ignore
 	 */
@@ -56,7 +56,7 @@ class FontAwesome_V3Mapper {
 	/**
 	 * Loads the map.
 	 *
-	 * @deprecated Provided temporarily for an upgrade path for previous font-awesome plugin users.
+	 * @ignore-deprecated Provided temporarily for an upgrade path for previous font-awesome plugin users.
 	 * @internal
 	 * @ignore
 	 */
@@ -72,7 +72,7 @@ class FontAwesome_V3Mapper {
 	/**
 	 * Map a Font Awesome version 3 icon name to the equivalent Font Awesome 5 prefix and name.
 	 *
-	 * @deprecated Provided temporarily for an upgrade path for previous font-awesome plugin users.
+	 * @ignore-deprecated Provided temporarily for an upgrade path for previous font-awesome plugin users.
 	 * @ignore
 	 * @internal
 	 */

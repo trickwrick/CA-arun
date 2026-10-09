@@ -131,7 +131,7 @@ class FontAwesome {
 	 * The namespace for this plugin's REST API.
 	 *
 	 * @internal
-	 * @deprecated
+	 * @ignore-deprecated
 	 * @ignore
 	 */
 	const REST_API_NAMESPACE = self::PLUGIN_NAME . '/v1';
@@ -210,13 +210,13 @@ class FontAwesome {
 
 	/**
 	 * @ignore
-	 * @deprecated
+	 * @ignore-deprecated
 	 */
 	const V3DEPRECATION_TRANSIENT = 'font-awesome-v3-deprecation-data';
 
 	/**
 	 * @ignore
-	 * @deprecated
+	 * @ignore-deprecated
 	 */
 	const V3DEPRECATION_EXPIRY = WEEK_IN_SECONDS;
 
@@ -299,7 +299,7 @@ class FontAwesome {
 	 *
 	 * Internal use only, not part of this plugin's public API.
 	 *
-	 * @deprecated
+	 * @ignore-deprecated
 	 * @internal
 	 * @ignore
 	 */
@@ -729,7 +729,7 @@ class FontAwesome {
 	 * [See the Font Awesome GraphQL API reference here](https://fontawesome.com/v5.15/how-to-use/graphql-api/intro/getting-started).
 	 *
 	 * @since 4.0.0
-	 * @deprecated
+	 * @ignore-deprecated
 	 *
 	 * @return null|string
 	 */
@@ -779,7 +779,7 @@ class FontAwesome {
 	 * discouraging anti-patterns.
 	 *
 	 * @since 4.0.0
-	 * @deprecated
+	 * @ignore-deprecated
 	 * @ignore
 	 * @throws ApiRequestException
 	 * @throws ApiResponseException
@@ -1517,7 +1517,7 @@ class FontAwesome {
 	 *
 	 * @since 4.0.0
 	 * @throws ConfigCorruptionException
-	 * @deprecated
+	 * @ignore-deprecated
 	 *
 	 * @return boolean
 	 */
@@ -2956,7 +2956,7 @@ EOT;
 	 *
 	 * Internal use only, not part of this plugin's public API.
 	 *
-	 * @deprecated Only for temporary internal plugin use while deprecating
+	 * @ignore-deprecated Only for temporary internal plugin use while deprecating
 	 * @ignore
 	 * @internal
 	 * @param array $data
@@ -2971,7 +2971,7 @@ EOT;
 	 *
 	 * Internal use only, not part of this plugin's public API.
 	 *
-	 * @deprecated Only for temporary internal plugin use while deprecating
+	 * @ignore-deprecated Only for temporary internal plugin use while deprecating
 	 * @return array
 	 * @ignore
 	 * @internal
@@ -2985,7 +2985,7 @@ EOT;
 	 *
 	 * Internal use only, not part of this plugin's public API.
 	 *
-	 * @deprecated Only for temporary internal plugin use while deprecating
+	 * @ignore-deprecated Only for temporary internal plugin use while deprecating
 	 * @ignore
 	 * @internal
 	 */
