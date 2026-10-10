@@ -40,7 +40,7 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <motion.div 
-            className="max-w-3xl"
+            className="max-w-5xl"
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
@@ -49,7 +49,7 @@ export default function Home() {
               Your Trusted Partner in Chartered Accountancy Solutions
             </motion.span>
             <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
-              Transforming <span className="text-transparent bg-clip-text bg-linear-to-r from-green-400 to-emerald-600">Numbers</span> into Success
+              Transforming <span className="text-transparent bg-clip-text bg-linear-to-r from-green-400 to-emerald-600">Numbers</span><br /> into Success
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl">
               We have provided financial planning and investment services to individuals and institutions in a variety of settings. Unlock your growth potential with our expert financial guidance.
