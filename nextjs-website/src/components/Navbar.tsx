@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex justify-between h-20 items-center">
           <div className="shrink-0 flex items-center">
             <Link href="/" className="flex flex-col items-center">
-              <img src="/logo.png" alt="Agrawal Goyanka & Co." className="h-12 w-auto" />
+              <img src="/logo.png" alt="Agrawal Goyanka & Co." className="h-[75px] w-auto" />
             </Link>
           </div>
           <div className="hidden md:flex space-x-10 items-center">

@@ -60,11 +60,11 @@ export default function About() {
               
               <div className="flex items-center gap-6 p-6 bg-gray-50 rounded-2xl border border-gray-100">
                 <div className="w-14 h-14 bg-gray-200 rounded-full overflow-hidden shrink-0 border-2 border-green-500">
-                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2000&auto=format&fit=crop" alt="CA Arun Agarwal" className="w-full h-full object-cover" />
+                  <img src="/CA Arun Kumar Agarwal.jpeg" alt="CA Arun Kumar Agarwal" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="text-gray-500 text-sm font-medium">Head Of Idea</p>
-                  <p className="text-xl font-bold text-gray-900">CA Arun Agarwal</p>
+                  <p className="text-gray-500 text-sm font-medium">Founder</p>
+                  <p className="text-xl font-bold text-gray-900">CA Arun Kumar Agarwal</p>
                 </div>
               </div>
             </div>

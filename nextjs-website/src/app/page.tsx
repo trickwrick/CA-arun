@@ -252,9 +252,9 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
             {[
-              { name: 'CA Arun Kumar Agarwal', role: 'Founder', img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2000&auto=format&fit=crop' },
+              { name: 'CA Arun Kumar Agarwal', role: 'Founder', img: '/CA Arun Kumar Agarwal.jpeg' },
               { name: 'CA Nitesh Goyanka', role: 'Partner', img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2000&auto=format&fit=crop' },
-              { name: 'CA Amit Gupta', role: 'Partner', img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2000&auto=format&fit=crop' }
+              { name: 'CA Amit Gupta', role: 'Partner', img: '/CA Amit Gupta.jpeg' }
             ].map((member, idx) => (
               <motion.div variants={fadeInUp} key={idx} className="group relative rounded-2xl overflow-hidden aspect-3/4 shadow-2xl">
                 <img src={member.img} alt={member.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
