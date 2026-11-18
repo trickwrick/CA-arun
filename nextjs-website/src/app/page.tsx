@@ -140,7 +140,7 @@ export default function Home() {
                 className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4"
               >
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-green-600">
-                  <span className="text-2xl font-black">31</span>
+                  <span className="text-2xl font-black">18</span>
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm font-bold uppercase tracking-wider">Years of</p>
@@ -167,7 +167,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm mb-1">Call us 24/7 for any questions</p>
-                  <a href="tel:+919414032355" className="text-2xl font-bold text-gray-900 hover:text-green-500 transition-colors">+91 94140 32355</a>
+                  <a href="tel:+919874032355" className="text-2xl font-bold text-gray-900 hover:text-green-500 transition-colors">+91 98740 32355</a>
                 </div>
               </motion.div>
               
@@ -252,15 +252,16 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
             {[
-              { name: 'CA Arun Kumar Agarwal', role: 'Founder', img: '/CA Arun Kumar Agarwal.jpeg' },
-              { name: 'CA Nitesh Goyanka', role: 'Partner', img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2000&auto=format&fit=crop' },
-              { name: 'CA Amit Gupta', role: 'Partner', img: '/CA Amit Gupta.jpeg' }
+              { name: 'CA Arun Kumar Agarwal', role: 'Founder', qualifications: 'FCA, LL.B, CCA (ICAI), B.Com', img: '/CA Arun Kumar Agarwal.jpeg' },
+              { name: 'CA Nitesh Goyanka', role: 'Partner', qualifications: 'FCA, B.Com', img: '/CA Nitesh Goyanka.jpg' },
+              { name: 'CA Amit Gupta', role: 'Partner', qualifications: 'ACA, B.Com', img: '/CA Amit Gupta.jpeg' }
             ].map((member, idx) => (
               <motion.div variants={fadeInUp} key={idx} className="group relative rounded-2xl overflow-hidden aspect-3/4 shadow-2xl">
-                <img src={member.img} alt={member.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img src={member.img} alt={member.name} className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform">
                   <p className="text-green-400 font-bold text-sm tracking-wider uppercase mb-1">{member.role}</p>
                   <h4 className="text-2xl font-bold text-white">{member.name}</h4>
+                  <p className="text-gray-300 text-sm font-medium mt-1">{member.qualifications}</p>
                   <div className="flex gap-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
                     <a href="#" className="w-8 h-8 rounded-full bg-white/20 hover:bg-green-500 flex items-center justify-center backdrop-blur-sm transition-colors">
                       <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>

@@ -99,6 +99,18 @@ export default function Footer() {
           {/* Get in touch */}
           <div>
             <h5 className="text-xl font-bold mb-6">Get in touch</h5>
+            <div className="space-y-3 text-sm text-gray-300 mb-6">
+              <p>
+                <span className="text-white font-semibold">Mobile:</span>{' '}
+                <a href="tel:+919874032355" className="hover:text-green-500 transition-colors">+91 98740 32355</a>
+              </p>
+              <p>
+                <span className="text-white font-semibold">HO:</span> 604, Arcade Tower, Malviya Marg, C-Scheme, Jaipur - 302001
+              </p>
+              <p>
+                <span className="text-white font-semibold">Branch Office:</span> Gulab Bag, Karauli
+              </p>
+            </div>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-gray-800/50 flex items-center justify-center hover:bg-green-500 transition-colors text-gray-400 hover:text-white">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

@@ -39,7 +39,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-gray-900 mb-1">Phone Number</h4>
-                    <a href="tel:+919414032355" className="text-gray-600 hover:text-green-500 transition-colors text-lg">+91 94140 32355</a>
+                    <a href="tel:+919874032355" className="text-gray-600 hover:text-green-500 transition-colors text-lg">+91 98740 32355</a>
                     <p className="text-sm text-gray-500 mt-1">Available 24/7 for urgent queries</p>
                   </div>
                 </div>
@@ -62,8 +62,17 @@ export default function Contact() {
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-1">Office Location</h4>
-                    <p className="text-gray-600 text-lg">Agrawal Goyanka & Co. <br /> Chartered Accountants, India</p>
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">Office Locations</h4>
+                    <div className="space-y-3 text-gray-600 text-base">
+                      <p>
+                        <span className="font-bold text-gray-900">Head Office (HO):</span><br />
+                        604, Arcade Tower, Malviya Marg, C-Scheme, Jaipur - 302001
+                      </p>
+                      <p>
+                        <span className="font-bold text-gray-900">Branch Office:</span><br />
+                        Gulab Bag, Karauli
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

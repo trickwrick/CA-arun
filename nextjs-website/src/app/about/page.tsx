@@ -27,7 +27,7 @@ export default function About() {
               </div>
               <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 border border-gray-100">
                 <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white">
-                  <span className="text-2xl font-black">31</span>
+                  <span className="text-2xl font-black">18</span>
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm font-bold uppercase tracking-wider">Years of</p>
@@ -65,6 +65,7 @@ export default function About() {
                 <div>
                   <p className="text-gray-500 text-sm font-medium">Founder</p>
                   <p className="text-xl font-bold text-gray-900">CA Arun Kumar Agarwal</p>
+                  <p className="text-sm font-medium text-green-600 mt-0.5">FCA, LL.B, CCA (ICAI), B.Com</p>
                 </div>
               </div>
             </div>

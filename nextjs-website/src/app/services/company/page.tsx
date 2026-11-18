@@ -50,7 +50,7 @@ export default function CompanyService() {
                 </div>
                 <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Post-Incorporation</h3>
-                  <p className="text-gray-600">Assistance with bank account opening, initial statutory compliance, and auditor appointment.</p>
+                  <p className="text-gray-600">Assistance with initial statutory compliance and auditor appointment.</p>
                 </div>
               </div>
             </div>
