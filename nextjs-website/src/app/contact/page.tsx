@@ -107,6 +107,18 @@ export default function Contact() {
             </div>
             
           </div>
+
+          {/* Embedded Google Map */}
+          <div className="mt-16 rounded-2xl overflow-hidden shadow-xl border border-gray-200 bg-gray-100">
+            <iframe
+              title="Agrawal Goyanka & Co. - Jaipur Head Office Map"
+              src="https://maps.google.com/maps?q=Agrawal%20Goyanka%20%26%20CO.%20CA%20Arun%20Kumar%20Agrawal%2C%20604%2C%20Arcade%20Tower%2C%20Malviya%20Marg%2C%20C-Scheme%2C%20Jaipur%20302001&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              className="w-full h-[450px] border-0 block"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
         </div>
       </section>
     </main>
